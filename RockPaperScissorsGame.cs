@@ -63,18 +63,21 @@ namespace HelloSoftUni
                     (playerInput == Paper && computerMove == Rock) ||
                     (playerInput == Scissors && computerMove == Paper))
                 {
-                    Console.WriteLine("You win."); 
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("You win."); 
             }
 
                 else if ((playerInput == Rock && computerMove == Paper) ||
                     (playerInput == Paper && computerMove == Scissors) ||
                     (playerInput == Scissors && computerMove == Rock))
                 {
-                    Console.WriteLine("You loose."); 
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("You loose."); 
             }
                 else
                 {
-                    Console.WriteLine("The game was a draw."); 
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.WriteLine("The game was a draw."); 
             }
             
             
